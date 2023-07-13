@@ -9,10 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyDemoLoggingAspect {
 
-//this is where we add all of our related advices for logging
-
-//let's start with an @Before advice
-
     /*
     here 1st * = return type
     then package name
@@ -26,7 +22,11 @@ public class MyDemoLoggingAspect {
 
     @Before("forDaoPackage()")
     public void beforeAddAccountAdvice(){
-
         System.out.println("\n=====>>> Executing @Before advice on addAccount()");
+    }
+
+    @Before("forDaoPackage()")
+    public void performApiAnalytics(){
+        System.out.println("\n=====>>> performint API Analytics");
     }
 }
