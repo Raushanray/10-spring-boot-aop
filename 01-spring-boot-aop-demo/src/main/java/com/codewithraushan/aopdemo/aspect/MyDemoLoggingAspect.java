@@ -13,7 +13,7 @@ public class MyDemoLoggingAspect {
 //let's start with an @Before advice
 
 
-    @Before("execution (* add* (com.codewithraushan.aopdemo.Account))")
+    @Before("execution (* add* (com.codewithraushan.aopdemo.Account, ..))")
 //    @Before("execution (* add* (Account))")
     public void beforeAddAccountAdvice(){
 
