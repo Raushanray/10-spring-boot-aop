@@ -13,8 +13,16 @@ public class MyDemoLoggingAspect {
 //let's start with an @Before advice
 
 
-    @Before("execution (* add* (..))")
-//    @Before("execution (* add* (Account))")
+
+    @Before("execution (* com.codewithraushan.aopdemo.dao.*.*(..))")
+    /*
+    here 1st * = return type
+    then package name
+    then 2nd * = class
+    then 3rd = method
+    and in (..) = any numbers of  parameters
+     */
+
     public void beforeAddAccountAdvice(){
 
         System.out.println("\n=====>>> Executing @Before advice on addAccount()");
