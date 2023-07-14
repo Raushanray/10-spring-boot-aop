@@ -7,7 +7,7 @@ import java.util.List;
 public interface AccountDAO {
 
     //add new method findAccount()
-    List<Account> findAccount();
+    List<Account> findAccounts();
 
     void addAccount(Account theAccount, boolean vipFlag);
     boolean doWork();

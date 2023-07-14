@@ -14,7 +14,7 @@ public class AccountDAOImpl implements AccountDAO{
 
 
     @Override
-    public List<Account> findAccount() {
+    public List<Account> findAccounts() {
         List<Account> myAccounts = new ArrayList<>();
 
         //create simple Account

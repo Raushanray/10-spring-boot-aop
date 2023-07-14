@@ -28,7 +28,7 @@ public class AopdemoApplication {
 
 	private void demoTheAfterReturningAdvice(AccountDAO theAccountDAO) {
 		//call method to find account
-		List<Account> theAccounts = theAccountDAO.findAccount();
+		List<Account> theAccounts = theAccountDAO.findAccounts();
 
 		//display the account
 		System.out.println("\n\nMain program : demoTheAfterReturningAdvice");
