@@ -38,6 +38,14 @@ public class DemoLoggingAspect {
         myLogger.info("=====>>> in @Before : calling method: " + theMethod);
 
         //display the argument to the method
+
+        //get the argument
+        Object[] args = theJoinPoint.getArgs();
+
+        //loop through and display the args
+        for (Object tempArg : args){
+            myLogger.info("=====>> arguments : " + tempArg);
+        }
     }
 }
 
