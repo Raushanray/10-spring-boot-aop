@@ -37,7 +37,10 @@ public class MyDemoLoggingAspect {
             System.out.println(exc.getMessage());
 
             //give user a custom message
-            result = "Major accident! But no warries, your private AOP helicopter is on the way!";
+            //result = "Major accident! But no warries, your private AOP helicopter is on the way!";
+
+            //rethrow the Exception
+            throw exc;
 
         }
 
